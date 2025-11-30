@@ -106,7 +106,7 @@ Below is a representation of the folder structure:
 
 ##<h2 id="erd-entity-relationship-diagram">🗺 ERD (Entity Relationship Diagram)</h2>
 
-The ERD for this project lives nice and cozy here: 👉 [ERD Diagram](erd/christmas_orders_erd.png).
+The ERD for this project lives nice and cozy here: 👉 [ERD Diagram](erd/erd.png).
 
 At a high level, it shows:
 
