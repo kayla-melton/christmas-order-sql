@@ -1,0 +1,11 @@
+order_id,created_at,item_name,item_cat,item_size,item_price,quantity,delivery,customer_firstname,customer_lastname,delivery_address1,delivery_city,delivery_zipcode
+ORD001,2023-12-01,side_rice,food,standard,5,2,1,Shanice,Jones,123 Main St,Atlanta,30301
+ORD002,2023-12-02,shoes,clothing,boy_5_5,25,1,0,Michael,Brown,44 Pine Ln,Chicago,60601
+ORD003,2023-12-03,side_collard_greens,food,family_xl,7,1,1,Linda,Smith,77 Oak Dr,Orlando,32801
+ORD004,2023-12-04,hygiene_kit,hygiene,infant,10,1,1,Rachel,Turner,252 Lake Rd,Houston,77001
+ORD005,2023-12-05,side_pinto_beans,food,standard,6,3,0,James,Wilson,19 Birch Blvd,Dallas,75201
+ORD006,2023-12-06,side_cabbage,food,family_xl,7,1,1,Karen,Carter,89 Hilltop Rd,Phoenix,85001
+ORD007,2023-12-07,side_black_eyed_peas,food,standard,6,2,0,Brian,White,10 Market St,Detroit,48201
+ORD008,2023-12-08,side_mixed_veggies,food,standard,5,1,1,Ashley,Green,700 Lakeview,Wichita,67201
+ORD009,2023-12-09,side_rice,food,family_xl,8,1,1,Jason,Lee,900 River Rd,Miami,33101
+ORD010,2023-12-10,shoes,clothing,boy_5_5,25,1,0,Olivia,King,42 Elm St,Seattle,98101
