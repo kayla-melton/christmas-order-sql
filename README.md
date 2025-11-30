@@ -106,7 +106,7 @@ Below is a representation of the folder structure:
 
 ## 🗺 ERD (Entity Relationship Diagram)
 
-The ERD for this project lives in `erd/christmas_orders_erd.png`.
+The ERD for this project lives nice and cozy here: 👉 [ERD Diagram](erd/christmas_orders_erd.png).
 
 At a high level, it shows:
 
@@ -280,14 +280,14 @@ High-level flow:
    - No constraints here; it’s just a safe landing zone.
 
 2. **Populate dimension tables** (`customers`, `address`, `item`, `shopping_trip`)
-   - Use `stage_to_dimensions.sql` to:
+   - Use [stage_to_dimensions.sql](sql/stage_to_dimensions.sql) to:
      - `INSERT IGNORE` distinct customers from `cust_firstname`, `cust_lastname`
      - `INSERT IGNORE` distinct addresses from `address1`, `city`, `zipcode`
      - `INSERT IGNORE` items from `item_name`, `item_size` (and `item_cat`, `item_price`)
      - `INSERT IGNORE` shopping trips from `trip_date`, `store_name`, `payment_method`, etc.
 
 3. **Populate the main fact table** (`christmas_order`)
-   - Use `stage_to_christmas_order.sql` to:
+   - Use [stage_to_christmas_order.sql](sql/stage_to_christmas_order.sql) to:
      - Join `christmas_order_stage` to `customers`, `address`, and `item` using cleaned keys
      - Insert one row per order line into `christmas_order`
      - Respect the `UNIQUE(order_id, item_id, add_id)` constraint so you can re-run the script without creating duplicates (`INSERT IGNORE` pattern).
@@ -307,12 +307,12 @@ This approach keeps the pipeline:
 
 1. Open **MySQL Workbench**.
 2. Connect to your MySQL instance.
-3. Open `sql/schema.sql`.
+3. Open [schema.sql](sql/schema.sql).
 4. Run the script (lightning bolt) to create the `christmas_orders` database and all tables.
 
 ### 2️⃣ (Optional) Seed item reference data
 
-1. Open `sql/seed_items.sql`.
+1. Open [seed_items.sql](sql/seed_items.sql).
 2. Run the script to insert sample `item` rows.
 
 ### 3️⃣ Load sample data into `christmas_order_stage`
@@ -326,7 +326,7 @@ This approach keeps the pipeline:
 
 ### 4️⃣ Populate dimensions (customers, address, item, shopping_trip)
 
-1. Open `sql/stage_to_dimensions.sql`.
+1. Open [stage_to_dimensions.sql](sql/stage_to_dimensions.sql).
 2. Run the script to upsert records into:
    - `customers`
    - `address`
@@ -335,7 +335,8 @@ This approach keeps the pipeline:
 
 ### 5️⃣ Populate the main fact table (christmas_order)
 
-1. Open `sql/stage_to_christmas_order.sql`.
+1. Open [stage_to_christmas_order.sql](sql/stage_to_christmas_order.sql)
+.
 2. Run the script.
 3. Check that `christmas_order` now contains one row per order + item combination.
 
@@ -348,7 +349,7 @@ You can re-run steps 4–5 safely if:
 
 ## 📊 Example Analysis Questions
 
-The file `sql/05_example_queries.sql` contains sample queries such as:
+The file [example_queries.sql](sql/example_queries.sql) contains sample queries such as:
 
 - **Top items by quantity ordered**
 
