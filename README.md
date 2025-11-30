@@ -34,7 +34,7 @@ This project is designed as a **portfolio piece** to demonstrate SQL skills usin
 
 ---
 
-## 📝 Project Overview
+##<h2 id="project-overview">📝 Project Overview</h2>
 
 Many community organizations run **holiday donation programs** where volunteers shop for families, purchase items, and deliver them as Christmas orders.  
 This project simulates that process and focuses on the **data infrastructure** behind it:
@@ -49,7 +49,7 @@ This repo shows the **full SQL side** of that story: tables, pipeline scripts, a
 
 ---
 
-## 🧩 Business Context
+##<h2 id="business-context">🧩 Business Context</h2>
 
 This project is built to answer questions that a real stakeholder might ask, such as:
 
@@ -67,7 +67,7 @@ By separating raw data (staging) from clean, relational tables, we can:
 
 ---
 
-## 🛠 Tech Stack
+##<h2 id="tech-stack">🛠 Tech Stack</h2>
 
 - **Database:** MySQL  
 - **Tooling:** MySQL Workbench (schema design, ERD, queries)  
@@ -80,7 +80,7 @@ By separating raw data (staging) from clean, relational tables, we can:
 
 ---
 
-## 📁 Folder Structure
+##<h2 id="folder-structure">📁 Folder Structure</h2>
 
 Below is a representation of the folder structure:
 
@@ -104,7 +104,7 @@ Below is a representation of the folder structure:
 ```
 --- 
 
-## 🗺 ERD (Entity Relationship Diagram)
+##<h2 id="erd-entity-relationship-diagram">🗺 ERD (Entity Relationship Diagram)</h2>
 
 The ERD for this project lives nice and cozy here: 👉 [ERD Diagram](erd/christmas_orders_erd.png).
 
@@ -121,8 +121,7 @@ Open the ERD image to see how all tables relate visually.
 
 ---
 
-## 🗄 Database Schema & Tables
-
+##<h2 id="database-schema--tables">🗄 Database Schema & Tables</h2>
 The project uses a **normalized schema** centered around the `christmas_orders` database.  
 Here’s a summary of each core table in plain English.
 
@@ -269,7 +268,7 @@ This supports more advanced inventory workflows, such as tracking how items flow
 
 ---
 
-## 🔄 Data Flow & ETL Pipeline
+##<h2 id="data-flow--etl-pipeline">🔄 Data Flow & ETL Pipeline</h2>
 
 This project uses a **stage → dimension → fact** pattern.
 
@@ -301,7 +300,7 @@ This approach keeps the pipeline:
 - **Safe** – target tables are protected by constraints  
 - **Clean** – dimension tables hold the “master” records for customers, addresses, items, and trips
 
-- ## 🧪 How to Run This Project
+- ##<h2 id="how-to-run-this-project">🧪 How to Run This Project</h2>
 
 ### 1️⃣ Create the database & tables
 
@@ -347,7 +346,7 @@ You can re-run steps 4–5 safely if:
 
 ---
 
-## 📊 Example Analysis Questions
+##<h2 id="example-analysis-questions">📊 Example Analysis Questions</h2>
 
 The file [example_queries.sql](sql/example_queries.sql) contains sample queries such as:
 
@@ -375,20 +374,7 @@ You can also extend this with your own analysis, for example:
 
 ---
 
-## 🚀 How This Fits in a Portfolio
-
-This project showcases:
-
-- **SQL fundamentals**
-  - SELECTs, JOINs, GROUP BY, aggregates
-- **Schema design**
-  - Normalized tables, primary/foreign keys, unique constraints
-- **Data engineering thinking**
-  - Staging vs target tables
-  - Idempotent loading patterns (safe re-runs)
-
-
-## 📬 Contact
+##<h2 id="contact">📬 Contact</h2>
 
 If you'd like to discuss this project or collaborate:
 
